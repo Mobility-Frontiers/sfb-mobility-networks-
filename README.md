@@ -33,7 +33,7 @@ The literature on segregation has documented that individuals of different class
 
 For each individual device *i*, SFB is defined as the average fraction of institutional layers shared with inter-class neighbors:
 
-$$SFB_i = \frac{\sum_j \sum_\ell g^\ell_{ij} / L}{\sum_j \mathbf{1}\left\{\sum_\ell g^\ell_{ij} > 0\right\}}$$
+$$SFB_i = \frac{\sum_j \sum_\ell g^\ell_{ij} / L}{\sum_j \mathbf{1}\lbrace\sum_\ell g^\ell_{ij} > 0\rbrace}$$
 
 Where:
 - $\ell \in \{$labor, educational, cultural/civic, consumption$\}$ are the institutional layers
@@ -41,6 +41,10 @@ Where:
 - The denominator counts unique inter-class neighbors across any layer
 
 SFB = 1 when every inter-class neighbor is shared across all institutional layers. SFB = 1/L when contacts are maximally non-overlapping across layers (minimum functional redundancy).
+
+
+
+
 
 ---
 
