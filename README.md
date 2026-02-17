@@ -124,7 +124,7 @@ Full results on real GPS data pending data access.
 
 **Roberto Cantillán** — PhD Candidate in Sociology, Pontificia Universidad Católica de Chile. Network science, social stratification, labor market dynamics. [`rcantillan`](https://github.com/rcantillan)
 
-**Mauricio Bucca** (PI) — Assistant Professor of Sociology, Pontificia Universidad Católica de Chile. Social mobility, inequality, computational social science.
+**Mauricio Bucca** (PI) — Assistant Professor of Sociology, Pontificia Universidad Católica de Chile. Social mobility, inequality, computational social science. [`mebucca`](https://github.com/mebucca) 
 
 ---
 
