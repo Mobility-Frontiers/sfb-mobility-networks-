@@ -36,15 +36,11 @@ For each individual device *i*, SFB is defined as the average fraction of instit
 $$SFB_i = \frac{\sum_j \sum_\ell g^\ell_{ij} / L}{\sum_j \mathbf{1}\lbrace\sum_\ell g^\ell_{ij} > 0\rbrace}$$
 
 Where:
-- $\ell \in \{$labor, educational, cultural/civic, consumption$\}$ are the institutional layers
+- $\ell \in \lbrace \text{labor, educational, cultural/civic, consumption} \rbrace$ are the institutional layers
 - $g^\ell_{ij} = 1$ if devices *i* and *j* co-occur in a POI of type $\ell$
 - The denominator counts unique inter-class neighbors across any layer
 
 SFB = 1 when every inter-class neighbor is shared across all institutional layers. SFB = 1/L when contacts are maximally non-overlapping across layers (minimum functional redundancy).
-
-
-
-
 
 ---
 
