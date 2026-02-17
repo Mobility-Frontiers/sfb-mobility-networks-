@@ -18,16 +18,16 @@ We formalize this as **Spatial Functional Bandwidth (SFB)**: the average functio
 
 The project bridges three bodies of literature:
 
-**1. Stratification, neighborhood effects, and the limits of exposure**  
-Chetty, Jackson et al. (2022a) established — using 21 billion Facebook friendships — that *economic connectedness* (EC), the share of high-SES friends among low-SES individuals, is the single strongest predictor of upward income mobility across U.S. counties, outperforming racial segregation, inequality, and educational outcomes. Their companion paper (Chetty et al. 2022b) decomposes the cross-class connection deficit into two components: *exposure* (access to high-SES individuals in shared institutional settings) and *friending bias* (lower rates of cross-class tie formation even conditional on exposure). Crucially, they find that **interaction** — not mere proximity — is what drives mobility.
+**1. Stratification, neighborhood effects, and the limits of friendship-based measures**  
+Chetty, Jackson et al. (2022a) established — using data on 21 billion Facebook friendships — that *economic connectedness* (EC), the share of high-SES friends among low-SES individuals, is the single strongest predictor of upward income mobility across U.S. counties, outperforming racial segregation, inequality, and educational outcomes. Their companion paper (Chetty et al. 2022b) decomposes the cross-class connection deficit into two components: *exposure* (the share of high-SES individuals in shared institutional settings such as schools, workplaces, and religious organizations) and *friending bias* (lower rates of cross-class tie formation even conditional on exposure). They find that both components independently predict causal effects on upward mobility.
 
-This leaves a fundamental measurement gap: Facebook captures friendships as a single undifferentiated relational layer, unable to distinguish *where* or *in what institutional context* those ties form. A cross-class connection initiated at work is functionally different from one formed at a mall, and neither is equivalent to one forged in an educational or civic setting. Our framework addresses this directly: GPS data reveals co-presence in categorized institutional spaces, providing the first instrument capable of measuring the *functional composition* of cross-class interaction at urban scale.
+This work establishes the importance of institutional context for cross-class interaction — but does so by analyzing each setting separately and measuring *declared friendship ties* as the outcome. Our framework addresses a complementary question: not which settings produce more cross-class friendships on average, but whether the *simultaneous* co-presence of the same low-SES individual with high-SES others across *multiple, functionally heterogeneous* institutional domains predicts mobility. This multiplex dimension of spatial encounters — which precedes and may determine whether friendships form at all — is not captured by friendship-based measures, regardless of how settings are disaggregated. GPS data allows us to observe it directly.
 
 **2. Multiplex network theory and complex contagion**  
 Chandrasekhar, Golub & Jackson (2025) demonstrate that network layers are not functionally interchangeable: their correlation structure shapes diffusion in non-monotonic ways, and specific layers outperform others in predicting behavioral adoption. Shi, Airoldi & Christakis (2025) show that what matters is not overlap volume but each layer's contribution to non-redundant contagion pathways (*network torque*). Neither paper, however, provides a theoretical account of *why* specific layers are functionally distinct — our concept of **functional non-substitutability** fills that gap.
 
 **3. Urban sociology and spatial segregation**  
-The literature documents that individuals of different classes increasingly inhabit separate institutional worlds. Our contribution is to show that it is the *institutional type* of spatial mixing — not its mere occurrence — that determines whether mobility-enabling resources can flow across class boundaries. This reframes Chetty et al.'s exposure component: what matters is not just whether low- and high-SES individuals share institutional spaces, but whether they share *multiple, functionally heterogeneous* ones simultaneously.
+The literature documents that individuals of different classes increasingly inhabit separate institutional worlds. Our contribution is to show that it is the *institutional type* of spatial mixing — not its mere occurrence — that determines whether mobility-enabling resources can flow across class boundaries. This reframes the exposure component identified by Chetty et al.: what matters is not just whether low- and high-SES individuals share institutional spaces, but whether they share *multiple, functionally heterogeneous* ones simultaneously.
 
 ---
 
@@ -48,7 +48,7 @@ $SFB_i = 1$ when every inter-class neighbor shares all institutional layers with
 
 ## Hypotheses
 
-**H1 — Functional non-substitutability**: SFB predicts intragenerational class mobility beyond the total volume of inter-class contacts. Individuals with the same number of inter-class contacts but different institutional diversity will show distinct mobility trajectories. This extends Chetty et al.'s finding that *interaction* predicts mobility by specifying the functional composition of interaction that matters.
+**H1 — Functional non-substitutability**: SFB predicts intragenerational class mobility beyond the total volume of inter-class contacts. Individuals with the same number of inter-class contacts but different institutional diversity will show distinct mobility trajectories.
 
 **H2 — Activation threshold**: There exists a nonlinear effect: class mobility requires SFB above a critical threshold. Below that threshold, the volume of inter-class contacts does not predict mobility — consistent with complex contagion dynamics (Centola & Macy, 2007; Granovetter, 1978).
 
@@ -125,6 +125,8 @@ The `synthetic/` folder contains a pipeline demonstration using simulated GPS tr
 - The pipeline correctly recovers injected structural variation by spatial mobility profile (constrained < partial < diverse), validating measurement validity.
 
 Note: synthetic data conservatively underestimates real SFB variation, as urban spatial segregation generates larger inter-class differences than simulation parameters.
+
+Full results on real GPS data pending data access.
 
 ---
 
